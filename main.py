@@ -131,7 +131,7 @@ class searchPage(FloatLayout):
         searchPage.Robot_index = (
             searchPage.Robot_currentPage - 1) * searchPage.Robot_pageNum
         self.add_Button('page')
-        for i in range(searchPage.Robot_pageNum):
+        for _ in range(searchPage.Robot_pageNum):
             searchPage.Robot_index += 1
             self.add_robot(y_coordinate)
             y_coordinate -= 110
@@ -170,7 +170,7 @@ class searchPage(FloatLayout):
             self.add_Button('last')
         if searchPage.Robot_currentPage == 1:  # 如果是第一页，从0开始
             searchPage.Robot_index = 0
-        for i in range(searchPage.Robot_pageNum):
+        for _ in range(searchPage.Robot_pageNum):
             searchPage.Robot_index += 1
             self.add_robot(y_coordinate)
             y_coordinate -= 110
